@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Recipes from'./components/Recipes';
 import Form from "./components/Form";
     // key
     // https://www.food2fork.com/api/search?key=9e733f71085841778fbab780de76000c&q=shredded%20chicken&count=5
@@ -45,18 +45,20 @@ import Form from "./components/Form";
         </header>
         {/* Passing data to another component using props  */}
         <Form getRecipe={this.getRecipe}/>
-        {this.state.recipes.map((recipe)=>{
-          return(
-          <div key ={recipe.recipe_id}>
-            <img src={recipe.image_url} alt={recipe.title}/>
-            <p >{ recipe.title }</p>
-          </div> 
-          // return  <p key ={recipe.recipe_id}>{ recipe.title }</p>
-          );
-        })}
+        <Recipes/>
       </div>
     );
   }
 }
 
 export default App;
+// {this.state.recipes.map((recipe)=>{
+//   return(
+//   //providing the key in the most parent div
+//   <div key ={recipe.recipe_id}>
+//     <img src={recipe.image_url} alt={recipe.title}/>
+//     <p >{ recipe.title }</p>
+//   </div> 
+//   // return  <p key ={recipe.recipe_id}>{ recipe.title }</p>
+//   );
+// })}
