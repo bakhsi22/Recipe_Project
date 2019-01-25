@@ -33,11 +33,12 @@ import Form from "./components/Form";
     // by including "https://cors-anywhere.herokuapp.com/" before link fetch 
     
     this.setState({recipes:data.recipes}) 
-    console.log(this.state.recipes);
+    
 
   
   }
   render() {
+    console.log(this.state.recipes);
     return (
       <div className="App">
         <header className="App-header">
@@ -45,20 +46,12 @@ import Form from "./components/Form";
         </header>
         {/* Passing data to another component using props  */}
         <Form getRecipe={this.getRecipe}/>
-        <Recipes/>
+        {/* //passing recipes state to this recipes component using props
+            then mapping over to Recipes component in Recipes.js */}
+          <Recipes recipes={this.state.recipe } />
       </div>
     );
   }
 }
 
 export default App;
-// {this.state.recipes.map((recipe)=>{
-//   return(
-//   //providing the key in the most parent div
-//   <div key ={recipe.recipe_id}>
-//     <img src={recipe.image_url} alt={recipe.title}/>
-//     <p >{ recipe.title }</p>
-//   </div> 
-//   // return  <p key ={recipe.recipe_id}>{ recipe.title }</p>
-//   );
-// })}
