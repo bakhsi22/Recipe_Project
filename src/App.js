@@ -44,6 +44,9 @@ class App extends Component {
         </header>
         {/* Passing data to another component using props  */}
         <Form getRecipe={this.getRecipe}/>
+        {this.state.recipes.map((recipe)=>{
+          return  <p key ={recipe.recipe_id}>{ recipe.title }</p>
+        })}
       </div>
     );
   }
