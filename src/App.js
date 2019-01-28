@@ -37,8 +37,8 @@ import Form from "./components/Form";
 
   
   }
-  render() {
-    console.log(this.state.recipes);
+  render() {  
+    // console.log(this.state.recipes);
     return (
       <div className="App">
         <header className="App-header">
@@ -48,7 +48,7 @@ import Form from "./components/Form";
         <Form getRecipe={this.getRecipe}/>
         {/* //passing recipes state to this recipes component using props
             then mapping over to Recipes component in Recipes.js */}
-          <Recipes recipes={this.state.recipe } />
+          <Recipes recipes={this.state.recipes } />
       </div>
     );
   }

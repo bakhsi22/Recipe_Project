@@ -2,7 +2,7 @@ import React from 'react';
 
 //making stateless component
 
-const Recipes =props => (
+const Recipes = props => (
     //implicity returning js
     <div>
         {props.recipes && props.recipes.map((recipe)=>{
@@ -14,9 +14,26 @@ const Recipes =props => (
         </div> 
         // return  <p key ={recipe.recipe_id}>{ recipe.title }</p>
         );
-        })}
+        }) }
         {/* Recipes ! */}
-    </div>
+    </div>  
 );
 
 export default Recipes ;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
