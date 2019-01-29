@@ -103,10 +103,10 @@ input[type="text"] {
   outline: none;
 }
 
-input:-webkit-autofill {
+/* input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset !important;
-  -webkit-text-fill-color: #762f7c !important;
-}
+  -webkit-text-fill-color: #762f7c !important; */
+/* } */
 
 /******** RECIPE.js ********/
 
