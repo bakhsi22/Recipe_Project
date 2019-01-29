@@ -4,9 +4,9 @@ const Form = props => (
   
 // onSubmit is a built in react attribute   
 
-  <form onSubmit={props.getRecipe}>
+  <form onSubmit={props.getRecipe} style={{ marginBottom: "2rem" }}>
 
-    <input type="text"  name="recipeName"/>
+    <input className="form__input" type="text"  name="recipeName"/>
 {/* 
 // we cant use this keyword becoz it works only in class based
 // components
@@ -14,7 +14,7 @@ const Form = props => (
 //argument 
 // props => */}
 
-    <button > Search </button>
+    <button className="form__button"> Search </button>
   </form>
 );
 
