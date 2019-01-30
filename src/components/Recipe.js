@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
 
 const API_KEY="9e733f71085841778fbab780de76000c";
 
