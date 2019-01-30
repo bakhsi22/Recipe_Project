@@ -17,8 +17,8 @@ const Recipes = props => (
                                 src={recipe.image_url}
                                 alt={recipe.title} />
                                 <div className="recipe__text">
-                                    <h5 className="recipes__title" >{recipe.title.length < 20 ? `${recipe.title}` : 
-                                    `${recipe.title.substring(0 , 25)}...`}
+                                    <h5 className="recipes__title" >
+                                    {recipe.title.length < 20 ? `${recipe.title}`:`${recipe.title.substring(0 , 25)}...`}
                                     </h5>
                                     <p className="recipes__subtitle">Publisher: <span>
                                         {recipe.publisher}
@@ -27,7 +27,7 @@ const Recipes = props => (
                                 <button className="recipe_buttons">
                                     <Link to={
                                         {pathname:`/recipe/${recipe.recipe_id}`,
-                                        state:`{recipe: recipe.title}`
+                                        state:{recipe: recipe.title}
                                         }}>View Recipe
                                     </Link>
                                 </button>
