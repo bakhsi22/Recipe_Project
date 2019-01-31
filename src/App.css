@@ -1,3 +1,11 @@
+marquee span { 
+  margin-right: 50%; 
+  } 
+  marquee p { 
+  white-space: space nowrap;;
+  margin-right: 50px; 
+  } 
+
 body {
   background:#f3f3f3;
 }
@@ -30,6 +38,7 @@ button:focus {
 .App-title {
   font-size: 1.5em;
 }
+
 
 .recipe_buttons {
   border: solid 2px #e74c3c;
