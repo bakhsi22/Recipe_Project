@@ -3,12 +3,22 @@
     flex-direction: column;
     justify-content: space-around;
     height:22px;
-    width: 30px;
+    width: 100px;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 0 1rem;
     box-sizing: border-box;
+    
+}
+.toggle-button2{
+    display: flex;
+    width: 55px;
+    justify-content: space-around;
+    border:10px;
+    flex-direction: row;
+    
+    
 }
 .toggle-button:focus{
     outline: none;
